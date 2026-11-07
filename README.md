@@ -12,6 +12,7 @@
 | [`fermat_too_long.py`](fermat_too_long.py) | post | 费马式"写不下"：AI 回复越长，越可能被替换成"我确信已经发现了一种美妙的回答，但是对话框太小写不下（"；≤100 字原样、>190 字固定 90%、中间按长度线性概率 |
 | [`leading_question_mark.py`](leading_question_mark.py) | post | 结尾问号搬到开头（"真的吗？"→"？真的吗"）：开头无问号、结尾恰好一个问号、其余全文无任何标点才触发，全半角（？/?）都认；连续问号（"??"）、带标点的正常疑问句不动 |
 | [`strip_single_period.py`](strip_single_period.py) | post | 删掉结尾唯一的"。"（"好的。"→"好的"）；结尾 ≥2 个连续句号（"无语了。。"）视为语气保留不动 |
+| [`trailing_open_paren.py`](trailing_open_paren.py) | post | 结尾不是标点时按 90% 概率补个没闭合的左括号（"其实我也这么觉得"→"其实我也这么觉得（"）；结尾有标点、含代码块的回复不动 |
 
 ## 使用方法
 
